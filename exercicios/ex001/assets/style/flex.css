@@ -1,5 +1,5 @@
 .menu{
-    display: flex;
+    display: flex; /* definindo que o elemento é Flexbox */
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -12,6 +12,7 @@
     row-gap: 0.5em;
 }
 
+/*Sessão Destaques*/
 .destaques {
     display: flex;
     align-items: center;
@@ -19,7 +20,21 @@
 }
 
 .destaques__barra {
+    flex-grow: 1; /* Expandir Elementos dentro de um Flex-container proporcionalmente */ 
+}
+
+/*Sessão Eventos*/
+.eventos__lista{
+    display: flex;
+    flex-wrap: wrap; /* Organiza os elementos colocando um abaixo do outro conforme o tamnho da tela */
+    column-gap: 1.5rem; /* Espaçamento entre Colunas */
+    row-gap: 1rem; /* Espaçamento entre Linhas */
+    justify-content: center;
+}
+
+.eventos__item{
     flex-grow: 1;
+    max-width: 400px;
 }
 
 @media (min-width: 720px) {
@@ -32,6 +47,9 @@
         flex-wrap: wrap;
         column-gap: 1.5rem;
         row-gap: 1rem;
+    }
+    .eventos__lista{
+        justify-content: end;
     }
 } 
 
