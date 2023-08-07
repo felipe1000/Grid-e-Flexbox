@@ -37,6 +37,18 @@
     max-width: 400px;
 }
 
+/*Sessão Agenda*/
+.agenda__lista{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+}
+.agenda__item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media (min-width: 720px) {
 
     .menu {
@@ -49,6 +61,13 @@
         row-gap: 1rem;
     }
     .eventos__lista{
+        justify-content: end;
+    }
+    .agenda__lista{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
         justify-content: end;
     }
 } 
@@ -77,5 +96,21 @@
 
     .menu__item:nth-child(5){
         order: 2;
+    }
+
+    .agenda__lista{
+        justify-content: center;
+    }
+
+    .agenda__item{
+        flex-grow: 1;
+    }
+
+    .agenda__item .agenda__informacoes {
+        min-width: 100%;
+    }
+
+    .agenda__item .agenda__atracao {
+        min-width: 100%;   
     }
 }

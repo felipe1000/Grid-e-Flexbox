@@ -294,6 +294,8 @@ img:hover {
     color: white;
     text-transform: uppercase;
     padding-top: 1rem;
+    max-width: 50%;
+    flex-grow: 1;
 }
 
 .agenda__informacoes h3 {
@@ -308,6 +310,8 @@ img:hover {
 .agenda__item .agenda__atracao {
     text-align: center;
     padding: 1rem;
+    max-width: 50%;
+    flex-grow: 1;
 }
 
 .agenda__atracao h6 {
