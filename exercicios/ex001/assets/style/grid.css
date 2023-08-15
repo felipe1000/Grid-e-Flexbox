@@ -12,6 +12,44 @@
     grid-row: 2/4;
 }
 
+.eventos__item{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: /* Cria e nomeia areas em um Grid*/ 
+        "imagem imagem"  /* 1 linha 2 colunas */
+        "nome nome"      /* 1 linha 2 colunas */
+        "data data"      /* 1 linha 2 colunas */
+        "local botao";   /* 1 linha 2 colunas */
+
+        /*
+            Cada par de aspas duplas representa uma linha e
+            cada elemento representa uma coluna.
+        */
+}
+
+/* Associando o HTML ao grid-template-areas*/
+.eventos__item img { 
+    grid-area: imagem; 
+
+}
+
+.eventos__item h3 {
+    grid-area: nome;
+}
+
+.eventos__item h4 {
+    grid-area: data;
+}
+
+.eventos__item h5 {
+    grid-area: local;
+}
+
+.eventos__item button {
+    grid-area: botao;
+}
+
+
 @media (min-width:720px){
 
     .banner{
