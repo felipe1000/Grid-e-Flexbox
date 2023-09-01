@@ -49,6 +49,17 @@
     justify-content: center;
 } */
 
+/*Rodapé*/
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*os elementos são organizados automaticamente, aproveitando todo o espaço disponível dentro do container do rodapé*/
+}
+
+.rodape__logo{
+    align-self: end; /*flex-item que altere a posição dos elementos fora do eixo principal.*/
+}
+
 @media (min-width: 720px) {
 
     .menu {
